@@ -31,32 +31,4 @@ iface vmbr5 inet manual
         bridge-ports none
         bridge-stp off
         bridge-fd 0
-#HQ-SW-HQ-CLI
-
-auto vmbr6
-iface vmbr6 inet manual
-        bridge-ports none
-        bridge-stp off
-        bridge-fd 0
-#HQ-SW-HQ-CICD
-
-auto vmbr7
-iface vmbr7 inet manual
-        bridge-ports none
-        bridge-stp off
-        bridge-fd 0
-#HQ-SW-HQ-SRV
-
-auto vmbr8
-iface vmbr8 inet manual
-        bridge-ports none
-        bridge-stp off
-        bridge-fd 0
-#BR-SW-BR-SRV
-
-auto vmbr9
-iface vmbr9 inet manual
-        bridge-ports none
-        bridge-stp off
-        bridge-fd 0
-#BR-SW-BR-CLI
+#ISP-CLI
