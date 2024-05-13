@@ -17,14 +17,14 @@ iface vmbr3 inet manual
         bridge-ports none
         bridge-stp off
         bridge-fd 0
-#HQ-R-HQ-SW
+#HQ-R-HQ-SRV
 
 auto vmbr4
 iface vmbr4 inet manual
         bridge-ports none
         bridge-stp off
         bridge-fd 0
-#BR-R-BR-SW
+#BR-R-BR-SRV
 
 auto vmbr5
 iface vmbr5 inet manual
