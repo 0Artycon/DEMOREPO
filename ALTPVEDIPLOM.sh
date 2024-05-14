@@ -1,10 +1,4 @@
 #!/bin/bash
-systemctl restart network;
-apt-get install python3-pip python3-venv -y;
-python3 -m venv myenv;
-source myenv/bin/activate;
-pip3 install wldhx.yadisk-direct;
-read -p "Enter the local storage name: " STORAGE
 qm create 100 --name "ISP" --cores 2 --memory 2048 --ostype l26 --scsihw virtio-scsi-single  --net0 virtio,bridge=vmbr0 --net1 virtio,bridge=vmbr1 --net2 virtio,bridge=vmbr2
 qm importdisk 100 ISP-disk001.vmdk $STORAGE --format qcow2 
 qm set 100 -ide0 $STORAGE:100/vm-100-disk-0.qcow2 --boot order=ide0
